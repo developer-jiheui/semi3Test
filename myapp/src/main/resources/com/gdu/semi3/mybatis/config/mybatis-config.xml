@@ -15,10 +15,8 @@
     <typeAlias alias="AccessHistoryDto" type="com.gdu.semi3.dto.AccessHistoryDto"/>
     <typeAlias alias="LeaveUserDto"     type="com.gdu.semi3.dto.LeaveUserDto"/>
     <typeAlias alias="UserDto"          type="com.gdu.semi3.dto.UserDto"/>
-    <typeAlias alias="BbsDto"           type="com.gdu.semi3.dto.BbsDto"/>
     <typeAlias alias="BlogDto"          type="com.gdu.semi3.dto.BlogDto"/>
     <typeAlias alias="CommentDto"       type="com.gdu.semi3.dto.CommentDto"/>
-    <typeAlias alias="UploadDto"        type="com.gdu.semi3.dto.UploadDto"/>
     <typeAlias alias="AttachDto"        type="com.gdu.semi3.dto.AttachDto"/>
   </typeAliases>
   

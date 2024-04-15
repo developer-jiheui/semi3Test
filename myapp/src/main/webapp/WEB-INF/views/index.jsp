@@ -7,7 +7,6 @@
 
 <jsp:include page="./layout/header.jsp"/>
 
-<h1>Welcome to SEMI3 STARTus
-</h1>
+<h1>LETS START SEMI PROJECT</h1>
   
 <%@ include file="./layout/footer.jsp" %>
