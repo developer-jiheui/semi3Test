@@ -33,7 +33,7 @@
   </listener>
   <!-- MyHttpSessionListener -->
   <listener>
-    <listener-class>com.gdu.myapp.listener.MyHttpSessionListener</listener-class>
+    <listener-class>com.gdu.semi3.listener.MyHttpSessionListener</listener-class>
   </listener>
   
   <!-- Processes application requests -->

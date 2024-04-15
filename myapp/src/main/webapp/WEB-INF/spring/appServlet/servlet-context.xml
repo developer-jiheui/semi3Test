@@ -24,7 +24,7 @@
     <beans:property name="suffix" value=".jsp" />
   </beans:bean>
   
-  <context:component-scan base-package="com.gdu.myapp" />
+  <context:component-scan base-package="com.gdu.semi3" />
   
   <!-- 인터셉터 등록 -->
   <interceptors>
@@ -33,13 +33,13 @@
       <mapping path="/bbs/write.page" />
       <mapping path="/blog/write.page" />
       <mapping path="/upload/write.page" />
-      <beans:bean class="com.gdu.myapp.interceptor.RequiredSigninInterceptor" />
+      <beans:bean class="com.gdu.semi3.interceptor.RequiredSigninInterceptor" />
     </interceptor>
     
     <interceptor>
       <mapping path="/user/signin.page"/>
       <mapping path="/user/signup.page"/>
-      <beans:bean class="com.gdu.myapp.interceptor.RequiredSignoutInterceptor" />
+      <beans:bean class="com.gdu.semi3.interceptor.RequiredSignoutInterceptor" />
     </interceptor>
     
   </interceptors>

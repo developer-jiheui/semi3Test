@@ -38,8 +38,8 @@
         id="sqlSessionFactoryBean"
         scope="singleton">
     <property name="dataSource" ref="hikariDataSource"/>
-    <property name="configLocation"  value="classpath:com/gdu/myapp/mybatis/config/mybatis-config.xml"/>
-    <property name="mapperLocations" value="classpath:com/gdu/myapp/mybatis/mapper/*.xml"/>
+    <property name="configLocation"  value="classpath:com/gdu/semi3/mybatis/config/mybatis-config.xml"/>
+    <property name="mapperLocations" value="classpath:com/gdu/semi3/mybatis/mapper/*.xml"/>
   </bean>
   
   <bean class="org.mybatis.spring.SqlSessionTemplate"
@@ -67,7 +67,7 @@
   
   <!-- Aspect 설정 -->
   <aop:config>
-    <aop:pointcut expression="execution (* com.gdu.myapp.service.*Impl.*(..))"
+    <aop:pointcut expression="execution (* com.gdu.semi3.service.*Impl.*(..))"
                   id="txPointCut"/>
     <aop:advisor advice-ref="txAdvice"
                  pointcut-ref="txPointCut"/>
@@ -77,6 +77,6 @@
   <aop:aspectj-autoproxy/>
   
   <!-- Mapper Interface 가 저장된 패키지 명시 -->
-  <mybatis-spring:scan base-package="com.gdu.myapp.mapper"/>
+  <mybatis-spring:scan base-package="com.gdu.semi3.mapper"/>
   
 </beans>
