@@ -56,4 +56,6 @@ public class BbsController {
     return "bbs/list";
   }
 
+  //test
+
 }
